@@ -2,7 +2,7 @@ import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
 
 
-const BASE_URL = "http://localhost:5000/api/";
+const BASE_URL = location.hostname === "localhost" ?  "http://localhost:5000/api/":process.env.API_URL;
 
 
 
