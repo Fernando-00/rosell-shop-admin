@@ -9,9 +9,7 @@ const useAuth = () =>{
     const user = useSelector((state)=> state.persistedReducer.user.currentUser);
     
     const admin = useSelector((state)=> state.persistedReducer.user.currentUser?.isAdmin);
-    console.log(user)
-    console.log(useSelector((state)=> state.persistedReducer.user.currentUser?.isAdmin))
-    console.log( JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user).currentUser?.isAdmin)
+    
     
 
     
